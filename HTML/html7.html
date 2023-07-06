@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH 06-1. CSS폰트 스타일 </title>
+    <style>
+        /* 1. 내부 폰트 사용하기 */
+        /* body {
+            font-family:"궁서";
+        } */
+
+        /* 2. 외부 폰트 사용하기 */
+        /* https://fonts.google.com/specimen/jejuhallasan 접속 */
+        @import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+        .ng-font{
+            font-family: "궁서";
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <p> 제주 할란 </p>
+    <p class="ng-font"> 제주 명조우 글씨체 </p>
+</body>
+</html>

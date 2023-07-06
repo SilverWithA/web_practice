@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입을 해주세요.</title>
+    <style>
+        th{
+            background-color: #96D4D4;
+        }
+        fieldset {
+            margin: 15px 300px;
+        }
+        fieldset legend {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        div.centered{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <h1 style="text-align: center;"> 회원가입을 해주세요. </h1>
+            <fieldset>
+                <legend> 필수 입력 정보</legend>
+                <table>
+                    <tr>
+                        <th><label for = "user-id"> 아이디</label></th>
+                        <td><input type="text" id="user-id" required ></td>
+                    </tr>
+                    <tr>
+                        <th><label for = "pwd"> 비밀번호 </label></th>
+                        <td><input type="password" id="pwd"></td>
+                    </tr>
+                    <tr>
+                        <th><label for = "user-mail"> 이메일 </label></th>
+                        <td><input type="email" id="user-mail"></td>
+                    </tr>
+                    <tr>
+                        <th><label for = "mail-agree"> 이메일 수신 동의 </label></th>
+                        <td><label><input type="radio" name = "mail-aggree" id="mail-agree" value="예">예</label>
+                            <label><input type="radio" name = "mail-aggree" id="mail-agree" value="아니오">아니오</label></td>
+                    </tr>
+                    <tr>
+                        <th><label for = "skills"> 선호 기술(중복 선택) </label></th>
+                        <td>
+                        <label><input type="checkbox" id="skills" value="빅데이터">빅데이터</label>
+                        <label><input type="checkbox" id="skills" value="인공지능">인공지능</label>
+                        <label><input type="checkbox" id="skills" value="딥러닝">딥러닝</label>
+                        <label><input type="checkbox" id="skills" value="머신러닝">머신러닝</label>
+                        <label><input type="checkbox" id="skills" value="JAVA">JAVA</label>
+                        <label><input type="checkbox" id="skills" value="Python">Python</label>
+                        <label><input type="checkbox" id="skills" value="C++">C++</label>
+                        <label><input type="checkbox" id="skills" value="C">C#</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend> 선택 입력 정보</legend>
+                <table>
+                    <tr>
+                        <th><label for="birth"> 생년월일</label></th>
+                        <td><input type="date" id="birth"></td>
+                    </tr>
+                    <tr>
+                        <th><label for ="sex"> 남/여 선택</label></th>
+                        <td><label><input type="radio" name ="sex" id="sex" value="남자">남자</label>
+                            <label><input type="radio" name ="sex" id="sex" value="여자">여자</label></td>
+                    </tr>
+                    <tr>
+                        <th><label for="job"> 직업</label></th>
+                        <td>
+                            <select name="직업">
+                            <option value="학생">학생</option>
+                            <option value="회사원">회사원</option>
+                            <option value="무직">무직</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th><label for="introduce"> 자기소개 </label></th>
+                        <td><input type="text id = "introduce"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div class="centered">
+                <input type="submit" value="제출하기">
+                <input type="reset" value="취소하기">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
